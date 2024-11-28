@@ -1,0 +1,158 @@
+        /* Style global */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #0e1e0d;
+            color: #f5f5f5;
+        }
+        
+
+            .contacUs{
+                display: flex;
+            }
+            .titleContact {
+                display: flex;
+                justify-content: space-between; /* Aligne les deux colonnes */
+                align-items: center; /* Centre verticalement */
+                text-align: left; /* Texte aligné à gauche */
+                padding: 20px ;
+            }
+            
+            .titleContact h1 {
+                flex: 2; /* Prend tout l'espace nécessaire à gauche */
+                font-size: 2.5rem;
+                margin: 0;
+                color: #ffffff;
+                padding-left: 100px;
+            }
+            
+            .rightContent {
+                flex: 2; /* Prend plus d'espace à droite */
+                display: flex;
+                flex-direction: column; /* Empile h5 et le bouton */
+                align-items: flex-start; /* Aligne les éléments à gauche à l'intérieur */
+                text-align: left; /* Aligne le texte à gauche */
+                padding-right: 100px;
+            }
+            
+            .rightContent h5 {
+                font-size: 1.2rem;
+                margin: 0 0 20px 0; /* Espace en dessous du h5 */
+                color: #c0c0c0;
+                line-height: 1.5;
+            }
+            
+            .contactButton {
+                padding: 10px 20px;
+                font-size: 1rem;
+                color: #fff;
+                background-color: #1d6733;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+            }
+            
+            .contactButton:hover {
+                background-color: #ffffff;
+                color: #15361f;
+            }
+            
+            /* Responsive Design */
+            @media screen and (max-width: 768px) {
+                .titleContact {
+                flex-direction: column; /* Empile les éléments en colonne */
+                text-align: center;
+                }
+            
+                .titleContact h1 {
+                margin-bottom: 20px; /* Ajoute un espace en bas du h1 */
+                text-align: center;
+                }
+            
+                .rightContent {
+                align-items: center; /* Centre les éléments sur mobile */
+                }
+            
+                .rightContent h5 {
+                text-align: center; /* Centre le texte */
+                }
+            }
+            
+            
+        /* Conteneur principal */
+        .container {
+            text-align: center;
+            padding: 20px;
+        }
+        
+        /* Titres */
+        .title {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            color: #b5c2b9;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            color: #b5c2b9;
+            margin-bottom: 20px;
+        }
+        
+        /* Conteneur des images */
+        .images {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin-top: 20px;
+            height: 700px; 
+        }
+        
+        /* Style des images */
+        .images img {
+            height: 450px; 
+            width: 350px; 
+            border-radius: 5px;
+            transition: transform 0.3s ease; /* Animation au survol */
+        }
+        
+        /* Déplacements pour un effet visuel */
+        .image-left {
+            transform: translateY(70px);
+        }
+        
+        .image-center {
+            transform: translateY(-20px);
+            z-index: 1;
+        }
+        
+        .image-right {
+            transform: translateY(70px);
+        }
+        
+        /* Effet au survol */
+        .images img:hover {
+            transform: scale(1.05); /* Zoom au survol */
+        }
+        
+        /* Styles responsives */
+        @media screen and (max-width: 768px) {
+            .images {
+            flex-direction: column;
+            height: auto; /* Adapter la hauteur pour les petits écrans */
+            }
+        
+            .images img {
+            width: 100%;
+            height: auto;
+            margin: 0 auto;
+            }
+        
+            .image-left,
+            .image-center,
+            .image-right {
+            transform: none; /* Supprimer les décalages */
+            }
+        }
+        
