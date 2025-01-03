@@ -17,7 +17,7 @@ import BookOnlineIcon from '@mui/icons-material/BookOnline';
 import AdminPanelSettingsIcon from '@mui/icons-material/AdminPanelSettings';
 import './nav.css'
 import { Authenticate } from '../../Validate/AuthContext';
-
+import logo from "./restaurantlogo.png";
 
 export default function NavBar() {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -37,7 +37,7 @@ export default function NavBar() {
       <AppBar sx={{backgroundColor:'white'}} position='static'>
         <Toolbar>
           <Typography variant="h5" component="div" sx={{ flexGrow: 1,color:'#e52b34',fontSize:'30px' }}>
-            Codx.
+          <img src={logo} alt='Restaurant Logo' style={{ height: '40px' }} />
           </Typography>
             <div>
             <Badge color="warning" variant="dot">
