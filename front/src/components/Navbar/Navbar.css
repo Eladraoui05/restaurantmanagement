@@ -1,0 +1,55 @@
+/* Général */
+.navbar {
+    background-color: #f8f9fa; /* Couleur de fond claire */
+    padding: 1rem 2rem; /* Espacement du haut et du bas */
+  }
+  
+  .navbar-brand {
+    font-family: 'Arial', sans-serif; /* Choix de typographie */
+    font-weight: 600;
+  }
+  
+  .logo-icon {
+    color: #28a745; /* Logo color */
+    margin-right: 10px;
+  }
+  
+  .navbar-toggler-icon {
+    background-color: #28a745; /* Couleur du bouton du navbar */
+  }
+  
+  /* Liens et icônes */
+  .icon-link {
+    margin-right: 15px; /* Espacement entre les icônes */
+  }
+  
+  .black-icon {
+    font-size: 1.5rem; /* Taille de l'icône */
+    transition: transform 0.3s ease, color 0.3s ease; /* Transition de transformation pour le survol */
+  }
+  
+  .icon-hover:hover {
+    color: #28a745; /* Changer la couleur au survol */
+    transform: scale(1.1); /* Agrandir l'icône au survol */
+  }
+  
+  /* Menu déroulant */
+  .nav-dropdown-menu {
+    background-color: #f8f9fa; /* Couleur de fond du menu */
+  }
+  
+  .nav-dropdown-item {
+    font-size: 1rem; /* Taille de la police du menu */
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-dropdown-item:hover {
+    background-color: #28a745; /* Fond au survol */
+    color: white; /* Changer la couleur du texte au survol */
+  }
+  
+  /* Navbar fixée en haut */
+  .fixed-top {
+    z-index: 1000;
+  }
+  
