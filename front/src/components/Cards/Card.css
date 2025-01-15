@@ -1,0 +1,51 @@
+.card {
+    width: 300px;
+    padding: 20px;
+    background-color: #1c1c1c;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+  }
+  
+  .card-image {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .card-title {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #ffcc00; /* Matching the site's accent color */
+  }
+  
+  .card-description {
+    font-size: 14px;
+    color: #cccccc;
+    margin: 10px 0;
+  }
+  
+  .card-price {
+    font-size: 16px;
+    margin: 10px 0;
+    font-weight: bold;
+    color: #00ff00; /* Green to emphasize price */
+  }
+  
+  .card-button {
+    background-color: #000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .card-button:hover {
+    background-color: #ffcc00; /* Accent color on hover */
+    color: black;
+  }
+  
